@@ -9,6 +9,11 @@ if settings.startup["high-capacity-magazines"].value == true then
     require(techs .. "high-capacity-shotgun-shells")
 end
 
+-- Expand containers after their high-capacity costs are calculated, before recycling.
+if not settings.startup["more-ammo-require-empty-magazines"].value then
+    require("prototypes.recipes.without-empty-magazines")
+end
+
 -- Recycling notes:
 -- - Only runs when the Space Age recycling category exists.
 -- - Builds hidden recycling recipes from the first recipe that produces the item.
