@@ -3,7 +3,7 @@ data:extend(
     {
       type = "recipe",
       name = "water-recipe",
-      icon = Graphics .. "SE/water-magazine.png",
+      icon = Graphics .. "SE/Water-magazine.png",
       icon_mipmaps = 4,
       icon_size = 64,
       enabled = false,
